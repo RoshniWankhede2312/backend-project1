@@ -1,40 +1,41 @@
-# Personal Finance Tracker - Backend
+# Personal Finance Tracker - Frontend
 
-This is the **Node.js backend** for the Personal Finance Tracker. It provides API endpoints for managing users, transactions, and categories.
+This is the **React.js frontend** for the Personal Finance Tracker. It provides users with an interface to manage their income, expenses, and financial transactions.
 
 ## 🚀 Features
-- **User Authentication** (JWT-based)
-- **Transaction Management**: Create, update, delete transactions.
-- **Category Management**: Fetch and filter categories.
-- **Filter Transactions** by category, type, and date range.
-- **Secure REST API** with Express.js and MongoDB.
+
+- **Dashboard View**: Displays transactions, summary, and filters.
+- **Transaction Management**: View, filter, and track financial transactions.
+- **Category-Based Filtering**: Filter transactions by category and type.
+- **Date Range Filter**: Select a date range using Material-UI Date Pickers.
+- **DataGrid Table**: Display transactions in an interactive table with sorting and searching.
 
 ## 🛠️ Tech Stack
-- **Node.js** with **Express.js**
-- **MongoDB** with Mongoose
-- **JWT Authentication**
-- **dotenv** for Configuration
-- **Cors & Helmet** for Security
+
+- **React.js** (with Hooks)
+- **Material-UI (MUI)** for UI Components
+- **Axios** for API Requests
+- **React Router** for Navigation
+- **MUI DataGrid** for Table View
 
 ## Folder structure
 
-backend/
+frontend/
 │── src/
-│   ├── controllers/       # API Controllers
-│   ├── models/            # Mongoose Models
-│   ├── routes/            # API Routes
-│   ├── middleware/        # Authentication Middleware
-│   ├── config/            # Database Config
-│   ├── server.js          # Entry Point
+│ ├── components/ # Reusable UI Components
+│ ├── hooks/ # Custom Hooks for API Calls
+│ ├── pages/ # Main Screens (Dashboard, Transactions)
+│ ├── App.js # Main Application Component
+│ ├── index.js # Entry Point
+│── public/
 │── package.json
-│── .env
 │── README.md
-
 
 ## 📦 Installation
 
-1. Navigate to the backend directory:
+1. Navigate to the frontend directory:
    ```sh
-   cd backend
-    yarn install
-    yarn start
+   cd frontend
+   yarn install
+   yarn dev
+   ```
